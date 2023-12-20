@@ -11,18 +11,18 @@ export default function Navbar() {
       title: "About",
       href: "/about",
     },
-    {
-      title: "Projects",
-      href: "/projects",
-    },
-    {
-      title: "Blog",
-      href: "/blog",
-    },
-    {
-      title: "Photos",
-      href: "/photos",
-    },
+    // {
+    //   title: "Projects",
+    //   href: "/projects",
+    // },
+    // {
+    //   title: "Blog",
+    //   href: "/blog",
+    // },
+    // {
+    //   title: "Photos",
+    //   href: "/photos",
+    // },
   ];
 
   return (

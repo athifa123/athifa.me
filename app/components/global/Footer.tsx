@@ -74,10 +74,10 @@ export default function Footer() {
               Stars <em className="text-primary-color not-italic">3,329</em>
             </a> */}
 
-            <small className="text-zinc-500">
+            {/* <small className="text-zinc-500">
               Copyright &copy; Victor Eke {new Date().getFullYear()} All rights
               Reserved
-            </small>
+            </small> */}
           </div>
         </div>
       </footer>

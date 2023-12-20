@@ -5,13 +5,13 @@ import Social from "../components/shared/Social";
 import { Slide } from "../animation/Slide";
 
 export const metadata: Metadata = {
-  title: "Blog | Victor Eke",
-  metadataBase: new URL("https://victoreke.com/blog"),
-  description: "Read latest stories from Victor Eke's Blog",
+  title: "Blog | Athifa Sultana",
+  metadataBase: new URL("https://athifa.me/blog"),
+  description: "Read latest stories from Athifa's Blog",
   openGraph: {
-    title: "Blog | Victor Eke",
-    url: "https://victoreke.com/blog",
-    description: "Read latest stories from Victor Eke's Blog",
+    title: "Blog | Athifa Sultana",
+    url: "https://athifa.me/blog",
+    description: "Read latest stories from Athifa Sultana's Blog",
     images:
       "https://res.cloudinary.com/victoreke/image/upload/v1692636087/victoreke/blog.png",
   },

@@ -8,13 +8,13 @@ import { Slide } from "../animation/Slide";
 import { sanityFetch } from "@/lib/sanity.client";
 
 export const metadata: Metadata = {
-  title: "Project | Victor Eke",
-  metadataBase: new URL("https://victoreke.com/projects"),
-  description: "Explore projects built by Victor Eke",
+  title: "Project | Athifa Sultana",
+  metadataBase: new URL("https://athifa.me/projects"),
+  description: "Explore projects built by Athifa Sultana",
   openGraph: {
-    title: "Projects | Victor Eke",
-    url: "https://victoreke.com/projects",
-    description: "Explore projects built by Victor Eke",
+    title: "Projects | Athifa Sultana",
+    url: "https://athifa.me/projects",
+    description: "Explore projects built by Athifa Sultana",
     images:
       "https://res.cloudinary.com/victoreke/image/upload/v1692636087/victoreke/projects.png",
   },

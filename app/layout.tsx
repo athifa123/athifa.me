@@ -15,10 +15,10 @@ const inter = Inter({
 });
 
 const options = {
-  title: "Victor Eke | Software Developer",
+  title: "Athifa | Software Developer",
   description:
-    "Victor Eke is a Software Developer and Technical Writer who is passionate about building solutions and contributing to open source communities",
-  url: "https://victoreke.com",
+    "I'm Athifa Sultana, a frontend developer passionate about learning and building web-applications. Focused on the creation of intuitive and user-friendly web applications, I am deeply passionate about exploring and adopting new technologies",
+  url: "https://athifa.me",
   ogImage:
     "https://res.cloudinary.com/victoreke/image/upload/v1692635746/victoreke/og.png",
 };
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: options.title,
     url: options.url,
-    siteName: "victoreke.com",
+    siteName: "athifa.me",
     locale: "en-US",
     type: "website",
     description: options.description,

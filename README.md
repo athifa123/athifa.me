@@ -1,9 +1,9 @@
 <div align="center">
-<a href="https://victoreke.com"><img src="./public/logo.png" width="60px"></a>
+<a href="https://athifa.me"><img src="./public/logo.png" width="60px"></a>
 </div>
 
 <div align="center">
-<h1>victoreke.com</h1>
+<h1>athifa.me</h1>
 <p>My personal portfolio website</p>
 </div>
 
