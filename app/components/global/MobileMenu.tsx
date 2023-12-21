@@ -20,21 +20,21 @@ export default function MobileMenu() {
       href: "/about",
       icon: HiUser,
     },
-    {
-      title: "Projects",
-      href: "/projects",
-      icon: HiBeaker,
-    },
-    {
-      title: "Blog",
-      href: "/blog",
-      icon: HiBookmarkAlt,
-    },
-    {
-      title: "Photos",
-      href: "/photos",
-      icon: HiCamera,
-    },
+    // {
+    //   title: "Projects",
+    //   href: "/projects",
+    //   icon: HiBeaker,
+    // },
+    // {
+    //   title: "Blog",
+    //   href: "/blog",
+    //   icon: HiBookmarkAlt,
+    // },
+    // {
+    //   title: "Photos",
+    //   href: "/photos",
+    //   icon: HiCamera,
+    // },
   ];
 
   const onToggleNav = () => {
