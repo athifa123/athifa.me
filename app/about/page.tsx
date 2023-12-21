@@ -11,13 +11,13 @@ import { Slide } from "../animation/Slide";
 import { sanityFetch } from "@/lib/sanity.client";
 
 export const metadata: Metadata = {
-  title: "About | Victor Eke",
-  metadataBase: new URL("https://victoreke.com/about"),
+  title: "About | Athifa Sultana",
+  metadataBase: new URL("https://athifa.me/about"),
   description:
     "Learn more about my skills, experience and technical background",
   openGraph: {
-    title: "About | Victor Eke",
-    url: "https://victoreke.com/about",
+    title: "About | Athifa Sultana",
+    url: "https://athifa.me/about",
     description:
       "Learn more about my skills, experience and technical background",
     images:
