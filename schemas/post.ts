@@ -142,7 +142,6 @@ export default defineType({
           options: {
             language: "typescript",
             withFilename: true,
-            highlightedLines: true,
             languageAlternatives: [
               { title: "Bash", value: "bash" },
               { title: "JavaScript", value: "js" },
