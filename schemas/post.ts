@@ -95,7 +95,8 @@ export default defineType({
       type: "array",
       description: "Write your post content here",
       of: [
-        {
+        // block 
+        defineArrayMember({
           type: "block",
           styles: [
             { title: "Normal", value: "normal" },
@@ -111,8 +112,10 @@ export default defineType({
               { title: "Code", value: "code" },
             ],
           },
-        },
-        {
+        }),
+
+        // image
+        defineArrayMember({
           type: "image",
           options: { hotspot: true },
           fields: [
@@ -129,8 +132,9 @@ export default defineType({
               description: "Important for SEO and accessiblity.",
             },
           ],
-        },
-        {
+        }),
+        // code blocks
+      defineArrayMember({
           type: "code",
           options: {
             language: "typescript",
@@ -153,7 +157,7 @@ export default defineType({
               { title: "Yaml", value: "yaml" },
             ],
           },
-        },
+        }),
       ],
     }),
     defineField({
