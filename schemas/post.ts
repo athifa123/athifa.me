@@ -1,4 +1,4 @@
-import { defineField, defineType } from "sanity";
+import { defineField, defineType, defineArrayMember } from "sanity";
 import { BiBookOpen } from "react-icons/bi";
 import Author from "./author";
 
@@ -77,7 +77,8 @@ export default defineType({
       title: "Post Tags",
       type: "array",
       description: "Add relevant tags that match with your post",
-      of: [{ type: "string" }],
+      // @ts-ignore: array member typing
+      of: [defineArrayMember({ type: "string" })],
       validation: (rule) => rule.required(),
     }),
     defineField({
