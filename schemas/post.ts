@@ -29,6 +29,7 @@ export default defineType({
       title: "Description",
       type: "text",
       description: "Summarize your article in 150 - 160 characters.",
+      options: { rows: 4 },
       validation: (Rule) => 
         Rule.required()
           .min(100)
@@ -55,15 +56,14 @@ export default defineType({
         "Upload a cover image for this blog post. Recommended size 1200 x 750",
       options: {
         hotspot: true,
-        //metadata: ["lqip"],
       },
       // @ts-ignore: Sanity supports nested fields on image; TS union complains
       fields: [
-        {
+        defineField({
           name: "alt",
           title: "Alt",
           type: "string",
-        },
+        }),
       ],
     }),
     defineField({
@@ -94,6 +94,7 @@ export default defineType({
       title: "Post Body",
       type: "array",
       description: "Write your post content here",
+      // @ts-ignore: Sanity array fields use `of`; TS union narrows incorrectly here
       of: [
         // block 
         defineArrayMember({
@@ -118,19 +119,21 @@ export default defineType({
         defineArrayMember({
           type: "image",
           options: { hotspot: true },
+          // @ts-ignore: nested fields on image are valid in Sanity
           fields: [
-            {
-              name: "caption",
-              title: "Image caption",
-              type: "string",
-              description: "Text displayed below the image.",
-            },
-            {
-              name: "alt",
-              title: "Alt text",
-              type: "string",
-              description: "Important for SEO and accessiblity.",
-            },
+            
+            defineField({
+                    name: "caption",
+                    title: "Image caption",
+                    type: "string",
+                    description: "Text displayed below the image.",
+                  }),
+                  defineField({
+                    name: "alt",
+                    title: "Alt text",
+                    type: "string",
+                    description: "Important for SEO and accessibility.", // <-- fix spelling
+                  }),
           ],
         }),
         // code blocks
@@ -147,7 +150,7 @@ export default defineType({
               { title: "TSX", value: "tsx" },
               { title: "JSX", value: "jsx" },
               { title: "CSS", value: "css" },
-              { title: "Groq", value: "graphql" },
+              { title: "Groq", value: "groq" },
               { title: "HTML", value: "html" },
               { title: "Json", value: "json" },
               { title: "Markdown", value: "md" },
