@@ -29,7 +29,6 @@ export default defineType({
       title: "Description",
       type: "text",
       description: "Summarize your article in 150 - 160 characters.",
-      rows: 4,
       validation: (Rule) => 
         Rule.required()
           .min(100)
