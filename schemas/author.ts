@@ -18,8 +18,8 @@ export default defineType({
       title: "Profile Photo",
       type: "image",
       description: "Upload a profile photo. Recommended size 320 x 320",
-      // @ts-expect-error Sanity supports nested fields on images, but types don't allow it
-
+      //@ts-expect-error Sanity supports nested fields on images, but types don't allow it
+    
       fields: [
         // @ts-ignore
         defineField({

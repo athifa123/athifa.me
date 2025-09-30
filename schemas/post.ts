@@ -55,8 +55,9 @@ export default defineType({
         "Upload a cover image for this blog post. Recommended size 1200 x 750",
       options: {
         hotspot: true,
-        metadata: ["lqip"],
+        //metadata: ["lqip"],
       },
+      // @ts-ignore: Sanity supports nested fields on image; TS union complains
       fields: [
         {
           name: "alt",
