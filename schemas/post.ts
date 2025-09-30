@@ -30,11 +30,10 @@ export default defineType({
       type: "text",
       description: "Summarize your article in 150 - 160 characters.",
       rows: 4,
-      validation: (Rule) => [
+      validation: (Rule) => 
         Rule.required()
           .min(100)
           .error("A description of min 100 characters is required"),
-      ],
     }),
     defineField({
       name: "canonicalLink",
