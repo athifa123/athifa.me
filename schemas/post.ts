@@ -1,6 +1,6 @@
 import { defineField, defineType, defineArrayMember } from "sanity";
 import { BiBookOpen } from "react-icons/bi";
-import Author from "./author";
+//import Author from "./author";
 
 export default defineType({
   name: "Post",
@@ -85,7 +85,8 @@ export default defineType({
       name: "author",
       title: "Author",
       type: "reference",
-      to: [{ type: Author.name }],
+      // @ts-ignore: `to` is valid for reference fields; TS union narrows incorrectly here
+      to: [{ type: "author" }] as const,
       validation: (rule) => rule.required(),
     }),
     defineField({
